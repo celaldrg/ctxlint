@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ctxlint"
+version = "0.1.0"
+description = "Lint AI agent context files (AGENTS.md, CLAUDE.md, .cursorrules, copilot-instructions.md) for stale paths, missing scripts, leaked secrets and token bloat."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Celalettin Durğaç" }]
+requires-python = ">=3.9"
+keywords = ["agents-md", "claude-md", "cursorrules", "ai-agents", "linter", "llm", "context-engineering"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Environment :: Console",
+  "Topic :: Software Development :: Quality Assurance",
+]
+
+[project.urls]
+Homepage = "https://github.com/celaldrg/ctxlint"
+
+[project.scripts]
+ctxlint = "ctxlint.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
