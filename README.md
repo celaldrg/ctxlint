@@ -5,7 +5,7 @@
 `AGENTS.md`, `CLAUDE.md`, `.cursorrules`, `.github/copilot-instructions.md`, `GEMINI.md` and `.cursor/rules/*` quietly rot. A folder gets renamed, a `typecheck` script gets removed, someone pastes their own `/Users/...` path, and the agent keeps following instructions that are no longer true. `ctxlint` checks those files against the actual repository, the same way a linter checks code.
 
 [![CI](https://github.com/celaldrg/ctxlint/actions/workflows/ci.yml/badge.svg)](https://github.com/celaldrg/ctxlint/actions/workflows/ci.yml)
-![python](https://img.shields.io/badge/python-3.9%2B-blue)
+![python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![deps](https://img.shields.io/badge/dependencies-0-brightgreen)
 ![license](https://img.shields.io/badge/license-MIT-green)
 

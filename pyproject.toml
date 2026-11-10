@@ -9,7 +9,7 @@ description = "Lint AI agent context files (AGENTS.md, CLAUDE.md, .cursorrules, 
 readme = "README.md"
 license = { text = "MIT" }
 authors = [{ name = "Celalettin Durğaç" }]
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 keywords = ["agents-md", "claude-md", "cursorrules", "ai-agents", "linter", "llm", "context-engineering"]
 classifiers = [
   "Programming Language :: Python :: 3",
