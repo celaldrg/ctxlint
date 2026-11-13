@@ -1,17 +1,30 @@
-# ctxlint
+<p align="center">
+  <img src="assets/banner.webp" alt="ctxlint: lint the instruction files your AI coding agents read on every turn" width="100%">
+</p>
 
-**Lint the instruction files your AI coding agents read on every turn.**
+<h3 align="center">Lint the instruction files your AI coding agents read on every turn.</h3>
+
+<p align="center">
+  <a href="https://github.com/celaldrg/ctxlint/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/celaldrg/ctxlint/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="https://github.com/celaldrg/ctxlint/releases"><img alt="Release" src="https://img.shields.io/github/v/release/celaldrg/ctxlint?sort=semver"></a>
+  <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
+  <img alt="Python 3.10+" src="https://img.shields.io/badge/python-3.10%2B-blue">
+  <img alt="Dependencies: 0" src="https://img.shields.io/badge/dependencies-0-brightgreen">
+</p>
+
+## Why
 
 `AGENTS.md`, `CLAUDE.md`, `.cursorrules`, `.github/copilot-instructions.md`, `GEMINI.md` and `.cursor/rules/*` quietly rot. A folder gets renamed, a `typecheck` script gets removed, someone pastes their own `/Users/...` path, and the agent keeps following instructions that are no longer true. `ctxlint` checks those files against the actual repository, the same way a linter checks code.
 
-[![CI](https://github.com/celaldrg/ctxlint/actions/workflows/ci.yml/badge.svg)](https://github.com/celaldrg/ctxlint/actions/workflows/ci.yml)
-![python](https://img.shields.io/badge/python-3.10%2B-blue)
-![deps](https://img.shields.io/badge/dependencies-0-brightgreen)
-![license](https://img.shields.io/badge/license-MIT-green)
 
 - Zero dependencies, pure Python standard library
 - Finds every common agent context file, including nested `AGENTS.md` in monorepos
 - CI-friendly exit codes and `--json` output
+
+<p align="center">
+  <img src="assets/terminal-demo.webp" alt="ctxlint examples/demo, real output" width="860">
+  <br><sub>Real output: <code>ctxlint examples/demo</code></sub>
+</p>
 
 ## Install
 
@@ -33,6 +46,11 @@ ctxlint --list-rules
 ## Example
 
 Running it on [`examples/demo`](examples/demo):
+
+<p align="center">
+  <img src="assets/demo.gif" alt="ctxlint linting examples/demo" width="860">
+  <br><sub>Recorded with <a href="https://github.com/charmbracelet/vhs">vhs</a>.</sub>
+</p>
 
 ```text
 $ ctxlint examples/demo
